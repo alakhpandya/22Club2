@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: navy;
+        color: #ddd;
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2.5rem;
+    }
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.6rem;
+        letter-spacing: 0.8px;
+    }
+    a{
+        text-decoration: none;
+        color: coral;
+        position: relative;
+    }
+
+    a:hover::after{
+        content: attr(data-tool-tip);
+        position: absolute;
+        bottom: 100%;
+        left: 20%;
+        background-color:burlywood ;
+        border-radius: 1em;
+        color: #333;
+        white-space: nowrap;
+        padding: 0.3rem 1.3rem;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium libero, officia ipsum repellendus excepturi expedita sunt quo aspernatur.</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a data-tool-tip="Subscribe to our YouTube channel!" href="#">Vel, aliquam.</a> Cum unde a sapiente voluptate tempore reiciendis. Nostrum harum rem dolorum vitae asperiores libero, voluptate repellat! Laudantium corrupti pariatur saepe? Mollitia eveniet, tempore dolorum, possimus aspernatur, non nam sit officia sapiente neque ipsa necessitatibus laborum placeat veritatis! <a href="#" data-tool-tip="Join our facebook community">Nihil doloremque</a> aliquam quos odio sit deserunt quidem, quia voluptas cumque debitis. Sed tempora earum distinctio aperiam culpa dicta enim perferendis. Temporibus impedit blanditiis dolores ipsum fugiat sapiente totam cumque corporis ea sit accusamus, eius provident inventore eveniet quisquam <a data-tool-tip="Follow us on twitter" href="#">officiis ducimus?</a> Nesciunt amet, suscipit, praesentium natus architecto hic magnam quos voluptas saepe maiores, numquam veritatis velit quae voluptatum quas esse. Qui dolores nihil eos inventore sit, sapiente ipsum sed sequi deserunt ad enim ducimus nam nemo molestiae fugiat possimus? Autem quo earum at cum laudantium sapiente minima ipsam qui, architecto, tenetur ratione omnis voluptate. Voluptatum natus praesentium quibusdam amet? Tempora in sequi quisquam eligendi aliquam obcaecati cupiditate, optio et pariatur rerum veniam amet? <a data-tool-tip="Like us on instagram" href="#">Sequi corporis</a> maiores est, quasi ut quae voluptatem rerum quis natus earum? Ea excepturi atque quidem ducimus temporibus? Sit totam voluptas illo necessitatibus? Distinctio architecto excepturi, sunt eum voluptas ipsum rerum asperiores temporibus ea veritatis non facilis alias esse sed?</p>
+</body>
+</html>

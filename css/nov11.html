@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        border: 2px solid;
+        display: flex;
+        height: 20rem;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start;    default */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        gap: 2rem;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        /* margin: 0.5rem; */
+        background-color: darkcyan;
+    }
+
+    .rectangle{
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; */
+
+        background-color: rgb(248, 191, 121);
+        height: 2rem;
+        width: 1rem;
+        margin: 1rem;
+        /* transform: translateX(100px); */
+        /* transform: translateY(-50px); */
+        /* transform: translate(100px, -50px); */
+        /* transform: scale(1.5, 3); */
+        /* transition: 1s; */
+        /* transition-property: transform; */
+        transition-property: all;
+        transition-duration: 4s;
+        transition-timing-function: ease;
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease-out; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function:cubic-bezier(1, 0, 0, 1); */
+    }
+    .rectangle:hover{
+        /* transform: scaleX(1.5); */
+        /* transform: translateX(100px); */
+        /* transform: scaleY(2); */
+        /* transform: rotate(90deg); */
+        /* transform: rotate(45deg); */
+        /* transform: rotate(180deg); */
+        /* transform: skew(45deg); */
+        /* background-color: maroon; */
+        width: 90vw;
+    }
+
+</style>
+
+<body>
+<!-- 
+    <div class="container">
+        <div class="box" id="item1"></div>
+        <div class="box" id="item2"></div>
+        <div class="box" id="item3"></div>
+        <div class="box" id="item4"></div>
+    </div>
+     -->
+
+    <div class="rectangle"></div>
+</body>
+<!-- 
+    brand using <img>
+    nav manu using <ul>
+    login, signup using <a>
+-->
+
+</html>

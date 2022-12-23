@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .master-container{
+        border: 2px solid green;
+        display: flex;
+        justify-content: space-between;
+        /* justify-content: space-around; */
+        /* padding: 0 5vw 0 10vw; */
+    }
+    h1{
+        border: 2px solid blue;
+        /* position: absolute; */
+    }
+    .container {
+        border: 2px solid blue;
+        display: flex;
+        height: 10vh;
+        /* gap: 4rem; */
+        /* padding: 0 20vw; */
+        justify-content: center;
+        /* justify-content: flex-end;
+        justify-content: flex-start;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+    }
+
+    .box {
+        border: 1px solid red;
+        /* width: fit-content; */
+        /* height: 50px; */
+        /* display: inline-block; */
+        /* background-color: darkcyan; */
+        color: navy;
+        padding: 2.5vh 1rem;
+    }
+    .login-container{
+        border: 2px solid blue;
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="master-container">
+        <h1 id="brand">MyCompany</h1>
+        <div class="container">
+            <div class="box" id="item-1">Home</div>
+            <div class="box" id="item-2">About</div>
+            <div class="box" id="item-3">Our Clients</div>
+            <div class="box" id="item-4">Career</div>
+        </div>
+        <div class="login-container">
+            <div class="box" id="item-5">Login</div>
+            <div class="box" id="item-6">Sign Up</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div{
+        border: 2px solid maroon;
+        margin: 1rem 0;
+        width: 200px;
+        display: inline;
+    }
+    a{
+        text-decoration: none;
+    }
+    .special-link{
+        background-color: darkcyan;
+        color: white;
+        width: 100px;
+        height: 25px;
+        /* display: block; */
+        display: inline-block;
+        margin: 0.5rem;
+        text-align: center;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+    .special-link:hover{
+        background-color: white;
+        color: darkcyan;
+    }
+    #try{
+        margin: auto;
+        display: block;
+        border: none;
+        /* border-width: 2px;
+        border-color: navy;
+        border-style: solid; */
+        border: navy 2px solid;
+    }
+
+    #fName{
+        margin: 0.5rem;
+        border: none;
+        /* border-bottom: 1px solid lightgray; */
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #fName:focus{
+        outline: none;
+        outline: 3px solid orange;
+        /* border-bottom-color: royalblue; */
+        /* color: royalblue; */
+    }
+    p:hover{
+        outline: 2px solid darkgoldenrod;
+    }
+</style>
+<body>
+    <!-- 
+        Display
+     -->
+
+    <div class="testing1">
+        I am very happy!
+    </div>
+    <div class="testing2">
+        I don't know why!
+    </div>
+
+    <a class="special-link" href="#">join</a>
+    <a class="special-link" href="#">subscribe</a>
+
+    <br>
+    <a href="#" id="try" class="special-link">try</a>
+
+    <input type="text" name="" placeholder="Full Name" id="fName">
+    <p>something</p>
+</body>
+</html>

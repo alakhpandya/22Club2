@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+    .navbar{
+        display: flex;
+        background-color: #222;
+        height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5vw;
+        font-family: 'Poppins', sans-serif;
+    }
+    .navbar a{
+        color: #ddd;
+    }
+    .navbar .brand{
+        font-family: 'Lobster', cursive;
+        font-size: 2rem;
+    }
+    .navbar .nav-manu-container{
+        display: flex;
+        gap: 1rem;
+    }
+    .navbar .nav-manu{
+        transition: 0.5s;
+    }
+    .underline{
+        background-color: wheat;
+        height: 2px;
+        border-radius: 5px;
+        width: 0;
+        transition: 0.5s;
+        margin: auto;
+    }
+    .navbar .nav-manu:hover{
+        color: wheat;
+    }
+    .navbar .nav-manu:hover + .underline{
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="brand-container">
+            <a class="brand" href="#">OneSchool</a>
+        </div>
+        <ul class="nav-manu-container">
+            <li class="nav-item"><a href="#" class="nav-manu">Home</a><div class="underline"></div></li>
+            <li class="nav-item"><a href="#" class="nav-manu">Courses</a><div class="underline"></div></li>
+            <li class="nav-item"><a href="#" class="nav-manu">Programs</a><div class="underline"></div></li>
+            <li class="nav-item"><a href="#" class="nav-manu">Teachers</a><div class="underline"></div></li>
+        </ul>
+        <div class="memership-container">
+            <a href="#">Login</a>
+            <a href="#">Signup</a>
+        </div>
+    </div>
+</body>
+
+</html>

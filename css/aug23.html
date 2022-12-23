@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    li:nth-child(2) {
+        background-color: burlywood;
+    }
+
+    li:nth-child(odd) {
+        background-color: lightgray;
+    }
+
+    li:nth-child(even) {
+        color: greenyellow;
+    }
+
+    li:nth-child(7n - 3) {
+        background-color: darkolivegreen;
+    }
+
+    li[value='201'] {
+        background-color: coral;
+    }
+
+    a[href='https://google.com'] {
+        background-color: cadetblue;
+    }
+    input[type = "password"]{
+        background-color: blanchedalmond;
+    }
+    input[type]{
+        color: red;
+    }
+</style>
+
+<body>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Assumenda, voluptatem.</li>
+        <li>Ipsum, nemo.</li>
+        <li>Dolor, possimus!</li>
+        <li>Incidunt, optio!</li>
+        <li>Quae, molestias.</li>
+        <li>Autem, dicta!</li>
+        <li>Accusamus, amet.</li>
+        <li>A, adipisci?</li>
+        <li>Cum, doloremque!</li>
+        <li>Explicabo, consequuntur?</li>
+        <li>Est, quasi?</li>
+        <li>Eligendi, culpa.</li>
+        <li>Nam, numquam.</li>
+        <li>Dolor, neque?</li>
+    </ul>
+    <ol>
+        <a href="https://google.com">Google<li value="101">Lorem</li></a>
+        <a href="">
+            <li>Numquam</li>
+        </a>
+        <a href="">
+            <li value="201">Repellendus</li>
+        </a>
+        <a href="">
+            <li value="103">Officiis</li>
+        </a>
+        <a href="">
+            <li>Quod</li>
+        </a>
+    </ol>
+    <form action="">
+        <div>
+            <input type="text" placeholder="Full Name">
+        </div>
+        <div>
+            <input type="email" name="" id="" placeholder="Email">
+        </div>
+        <div>
+            <input type="password" name="pwd" id="pwd" placeholder="Password">
+        </div>
+        <div>
+            <input type="password" name="cpwd" id="cpwd" placeholder="Confirm Password">
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>

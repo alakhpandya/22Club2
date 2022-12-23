@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/* 
+    .container{
+        border: 2px solid blue;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        flex-direction: row;    default
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+     */
+    /*
+    .box{
+        border: 2px solid black;
+        height: 5vh;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: fit-content;
+    }
+    */
+
+    .container{
+        border: 2px solid blue;
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        gap: 1rem;
+    }
+
+    .box{
+        border: 2px solid red;
+        width: 200px;
+    }
+    #item-1{
+        flex-shrink: 0;
+    }
+    #item-2{
+        flex-shrink: 2;
+    }
+    #item-3{
+        flex-grow: 1;
+    }
+    #item-4{
+        flex-grow: 2;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="item-1">Home</div>
+        <div class="box" id="item-2">About</div>
+        <div class="box" id="item-3">Our Clients</div>
+        <div class="box" id="item-4">Career</div>
+        <div class="box" id="item-5">Login</div>
+        <div class="box" id="item-6">Sign Up</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border: 2px solid black;
+    }
+    .box > div{
+        border: 2px solid red;
+        height: 100px;
+    }
+    #btn1{
+        /* Individual margins on each side */
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+    #btn2{
+        /* Margins do not overlap in in-line elements */
+        margin-left: 30px;
+    }
+    #item1{
+        /* All side equal margins */
+        margin: 10px;
+    }
+    #item2{
+        /* Margins overlap in block elements */
+        margin: 20px;
+    }
+    #btn3{
+        margin-bottom: 20px;
+    }
+    #sub-item1{
+        margin-top: 20px;
+    }
+    #item3{
+        /* margin: top-bottom left-right */
+        margin: 50px 100px;
+    }
+    #item4{
+        /* margin: top right bottom left */
+        margin: 10px 20px 30px 40px;
+    }
+    #item5{
+        /* margin: top left-right bottom */
+        margin: 20px 30px 40px;
+    }
+</style>
+<body>
+    <div class="box">
+        <div id="item1">
+            <button id="btn1">button1</button>
+            <button id="btn2">button2</button>
+        </div>
+        <div id="item2">
+            <button id="btn3">button3</button>
+            <div id="sub-item1">
+                <button id="btn4">button4</button>
+            </div>
+        </div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+        <div id="item5">5</div>
+    </div>
+</body>
+</html>

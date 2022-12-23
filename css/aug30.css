@@ -1,0 +1,41 @@
+@import url('/aug24_fonts.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    background-color: white;
+}
+
+img{
+    width: 100vw;
+    height: 110vh;
+}
+
+/* rem = 16px */
+
+#greet{
+    font-size: 1rem;
+}
+#ask{
+    font-size: 16px;
+}
+
+.btn{
+    /* font-size: 2rem; */
+    /* font-size: 2em; */
+    /* padding: 1rem; */
+    /* font-size: 20rem; */
+
+
+    padding: 1em;
+    font-size: 5rem;
+    /* background-color: darkolivegreen; */
+    /* background-color: rgb(183, 219, 120); */
+    /* background-color: #eee; */
+    background-color:rgba(85, 107, 47, 0.2) ;
+    color: navy;
+}
