@@ -25,12 +25,11 @@ body{
     padding: 0 1.5rem 3rem;
     border-radius: 20px;
     background-color: royalblue;
-    max-width: 400px;
 }
 
 .container .login-signup-title{
     font-size: 2.3rem;
-    transform: translate(25%, 50%);
+    transform: translate(15px, 50%);
     background-color: royalblue;
     width: fit-content;
 }
@@ -40,6 +39,10 @@ body{
     padding: 1rem;
     padding-bottom: 0;
     border-radius: 20px;
+}
+
+.login-signup-form .user-details{
+    display: flex;
 }
 
 .login-signup-form .input-box{
@@ -63,7 +66,7 @@ body{
     letter-spacing: 0.8px;
 }
 
-.input-box input:focus{
+.input-box input:focus, .input-box input:valid{
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -76,7 +79,7 @@ body{
     color: #ccc;
 }
 
-.input-box input:focus + label{
+.input-box input:focus + label, .input-box input:valid + label{
     top: 0;
     left: 10px;
     background-color: royalblue;
@@ -99,6 +102,7 @@ body{
 }
 
 .login-signup-form .remember-new-old-user-box{
+    /* border: 2px solid red; */
     display: flex;
     width: 90%;
     margin: 1rem auto;
@@ -130,4 +134,21 @@ body{
     background-color: royalblue;
     color: #ddd;
     cursor: pointer;
+}
+
+
+
+@media (max-width: 300px){
+    .container{
+        padding: 0 0.5rem 1rem;
+    }
+    .container .login-signup-form{
+        padding: 0rem;
+    }
+    .login-signup-form .remember-new-old-user-box{
+        width: 95%;
+    }
+    .login-signup-form .input-box{
+        width: 95%;
+    }
 }
