@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #e0f9f9;
+        font-family: sans-serif;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        display: grid;
+        gap: 1rem;
+        /* grid-template-columns: 300px 300px 300px 300px; */
+        /* grid-template-columns: 50vw 25vw 25vw; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(5, 1fr); */
+        grid-template-columns: repeat(4, 1fr);
+        width: 95%;
+    }
+    .card {
+        background-color: blueviolet;
+        border-radius: 10px;   
+        padding: 1.5rem; 
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .role{
+        font-size: 1.1rem;
+    }
+    .title{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+    #item1{
+        grid-column: span 2;
+    }
+    #item2{
+        background-color: rgb(65, 73, 83);
+    }
+    #item3{
+        grid-row: span 2;
+    }
+    #item5{
+        grid-column: span 2;
+        background-color: #222;
+    }
+    #item1, #item2, #item5{
+        color: white;
+    }
+    #item3, #item4{
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- (div.card#item$>((h1.name>lorem2)+(p.role>lorem2)+(p.title>lorem30)+(p.description>lorem90)))*5 -->
+        <div class="card" id="item1">
+            <h1 class="name">Lorem, ipsum.</h1>
+            <p class="role">Lorem, ipsum.</p>
+            <p class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae totam id at?
+                Accusantium.</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae dolorum nihil
+                facilis libero, rerum quam aliquam reprehenderit numquam. Culpa tempore ipsam iure necessitatibus non
+                facilis! In aperiam laboriosam ea nihil hic, vero architecto sequi facere porro aut voluptatum
+                consectetur quisquam molestiae impedit ducimus minima nesciunt! Quaerat eius, quo asperiores adipisci
+                reprehenderit eveniet voluptate quibusdam quasi autem ipsam perferendis aliquam minima deserunt
+                accusantium, eum excepturi neque obcaecati.</p>
+        </div>
+        <div class="card" id="item2">
+            <h1 class="name">Delectus, blanditiis?</h1>
+            <p class="role">Minus, modi.</p>
+            <p class="title">Officiis, sed distinctio itaque.</p>
+            <p class="description">Reiciendis pariatur qui aspernatur recusandae omnis aut quod, optio sed, eaque
+                expedita consequatur neque tempore, ex facilis voluptatibus nisi non beatae? Ea laboriosam sequi dolorum
+                vel officiis obcaecati, maiores praesentium dignissimos accusantium voluptatem amet ducimus!</p>
+        </div>
+        <div class="card" id="item3">
+            <h1 class="name">Rerum, ipsam?</h1>
+            <p class="role">Ducimus, facilis.</p>
+            <p class="title">Adipisci, numquam sapiente aliquam laudantium vero</p>
+            <p class="description">Deleniti aliquid neque minus quod repellendus minima, reprehenderit corporis!
+                Voluptatem, voluptas reiciendis. Consequatur beatae deleniti aliquid magnam vel corrupti accusamus
+                distinctio animi provident tempora nisi ullam necessitatibus, nesciunt dolorem neque hic enim adipisci
+                iure molestias voluptatibus. Impedit cupiditate aperiam, mollitia numquam autem reiciendis dolorem earum
+                nemo, praesentium accusamus itaque dicta dignissimos temporibus laboriosam nostrum magni ea? Quis
+                reprehenderit nobis corrupti id hic sapiente, aliquam quasi dolor voluptates molestiae impedit
+                laboriosam dicta, odio quaerat. Animi dolorum expedita dolores sint eligendi? Recusandae accusantium sit
+                ex laudantium, facilis ipsa. Quos enim officiis distinctio. Fugiat aperiam aliquam quasi quos molestias velit. Repudiandae, temporibus deserunt sequi impedit aliquid, cumque voluptatibus repellendus voluptas dolor officia vitae rerum eligendi quod similique.</p>
+        </div>
+        <div class="card" id="item4">
+            <h1 class="name">Aspernatur, adipisci!</h1>
+            <p class="role">Nam, placeat.</p>
+            <p class="title">Ipsam similique autem aperiam, earum?</p>
+            <p class="description">Ullam nihil natus magnam architecto veniam veritatis commodi rem nemo eum, impedit
+                dolores atque soluta recusandae, vel voluptate placeat quis eveniet ducimus minus est quaerat.</p>
+        </div>
+        <div class="card" id="item5">
+            <h1 class="name">Voluptatibus, commodi.</h1>
+            <p class="role">Pariatur, dolores!</p>
+            <p class="title">Deserunt delectus repellendus, at deleniti asperiores ad magnam? Vero, numquam ullam ipsa
+                iure tempora minima.</p>
+            <p class="description">Porro ea dolores, tempore quo, molestiae illo cum aperiam non sed eveniet rerum ex
+                obcaecati fugit? Corporis veritatis sit aliquam fugiat corrupti tenetur perspiciatis sunt adipisci
+                praesentium delectus, architecto dolor numquam? Culpa eveniet molestias repudiandae corrupti voluptas
+                optio explicabo harum, nam fugiat assumenda similique asperiores iure quibusdam blanditiis magni
+                laudantium quisquam ratione. Nisi, blanditiis. Eius mollitia sequi eaque harum deleniti voluptatem
+                dignissimos, vel inventore, id aliquid doloribus ratione error at consectetur?</p>
+        </div>
+    </div>
+</body>
+
+</html>
