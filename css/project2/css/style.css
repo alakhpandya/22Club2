@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wallpaper{
+    position: relative;
+}
+.wallpaper img{
+    height: 90vh;
+}
+#wave{
+    position: absolute;
+    bottom: 0;
+}
