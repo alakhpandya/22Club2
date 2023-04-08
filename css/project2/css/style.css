@@ -1,9 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Lexend+Deca&family=Livvic&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root{
+    --btn-fonts: 'Livvic', sans-serif;
+    --primary-fonts: 'Abel', sans-serif;;
+    --secondary-fonts: 'Lexend Deca', sans-serif;
+    --headline-fonts: 'Anton', sans-serif;
+
+    --white: #fff;
+    --title-font-color: #3f4954;
+    --btn-bg-color: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --nav-hover-bg-color: #104f55;
+    --footer-bg-color: #0f0f0f;
+    --text-light-color: rgba(104, 102, 102, 0.855);
+    --social-icon-hover-color: #a1c4cf;
+    --black: #000;
+}
+body{
+    font-family: var(--primary-fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.btn{
+    font-family: var(--btn-fonts);
+    color: var(--black);
+    background: var(--btn-bg-color);
+    padding: 0.75rem 2.1rem;
+    font-style: normal;
+}
+.rounded-btn{
+    border-radius: 1.5em;
+}
+.wallpaper-btn:hover{
+    border: solid 1px var(--white);
+    color: var(--white);
+    background: transparent;
+}
+
+
+/* Navbar */
+nav{
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.8s;
+    position: relative;
+}
+.show-navbar{
+    height: 360px;
+}
+.nav-shrink{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-logo{
+    font-size: 1.5rem;
+    font-family: var(--secondary-fonts);
+    color: var(--title-font-color);
+}
+.nav-shrink .bar-icon{
+    font-size: 1.5rem;
+}
+
+.nav-menu{
+    padding-left: 60px;
+}
+.nav-menu li{
+    margin: 1.2rem 0;
+}
+.nav-links{
+    color: var(--title-font-color);
+}
+nav .social{
+    padding-left: 20px;
+    margin: 2rem 0 1.2rem;
+}
+nav .social-icons{
+    color: var(--title-font-color);
+    margin-right: 1rem;
+}
+
+
+
+/* Wallpaper */
 .wallpaper{
     position: relative;
 }
@@ -13,4 +104,89 @@
 #wave{
     position: absolute;
     bottom: 0;
+    left: 0;
+}
+.wallpaper-text{
+    position: absolute;
+    top: 30%;
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+.wallpaper-title{
+    font-family: var(--secondary-fonts);
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Carousel */
+
+.item{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5rem;
+}
+.carousel-title{
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+}
+.carousel-text{
+    margin: 1.8rem 0 1rem;
+}
+
+/* Media Queries */
+@media (min-width: 750px){
+    .nav-shrink .bar-icon{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 5rem;
+    }
+    .nav-menu li{
+        padding: 1.65rem 1rem 0;
+        height: 5rem;
+        white-space: nowrap;
+    }
+    .nav-menu li:hover{
+        background-color: var(--nav-hover-bg-color);
+    }
+    .nav-menu li:hover a{
+        color: var(--white);
+    }
+    nav .social{
+        padding-left: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        display: flex;
+        gap: 1rem;
+    }
+    nav .social-icons{
+        color: var(--title-font-color);
+        margin-right: 0;
+        cursor: pointer;
+    }
+    nav .social-icons:hover{
+        color: var(--social-icon-hover-color);
+    }
+    .wallpaper img{
+        height: auto;
+        width: 100vw;
+    }
+    #wave{
+        bottom: -10%;
+    }   
 }
