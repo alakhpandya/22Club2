@@ -6,7 +6,7 @@ $('.owl-carousel').owlCarousel({
     autoplay:false,
     autoplayTimeout:1000,
     autoplayHoverPause:true,
-    center:true,
+    navText: ['<i class="fa-solid fa-arrow-left-long nav-arrows"></i>','<i class="fa-solid fa-arrow-right-long nav-arrows"></i>'],
     responsive:{
         0:{
             items:1
@@ -19,3 +19,5 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+AOS.init();

@@ -46,7 +46,14 @@ ul{
     color: var(--white);
     background: transparent;
 }
-
+.long-btn{
+    display: block;
+    width: 75%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
 
 /* Navbar */
 nav{
@@ -121,14 +128,26 @@ nav .social-icons{
 }
 
 
+main{
+    background: url('/assets/Abract01.png') top right/90vw no-repeat;
+}
 /* Carousel */
-
+.carousel{
+    margin-top: 15rem;
+}
+.owl-carousel .owl-stage-outer{
+    padding-bottom: 3rem;
+}
 .item{
     width: 80%;
     margin: auto;
     text-align: center;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
     margin-top: 5rem;
+    padding-bottom: 1rem;
+}
+.item img{
+    height: 300px;
 }
 .carousel-title{
     font-size: 1.3rem;
@@ -136,6 +155,117 @@ nav .social-icons{
 }
 .carousel-text{
     margin: 1.8rem 0 1rem;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-nav .nav-arrows{
+    font-size: 2rem;
+}
+
+
+.grid-parent{
+    margin-top: 5rem;
+    display: grid;
+}
+
+/* Blog-posts */
+
+.blog-post-container{
+    width: 85%;
+    margin: auto;
+    /* border: solid red; */
+}
+
+.blog-post-img{
+    width: 100%;
+}
+.blog-post-headline{
+    font-family: var(--headline-fonts);
+    color: var(--title-font-color);
+    font-size: 1.7rem;
+    display: block;
+    margin: 1.5rem 0;
+}
+.blog-post-text{
+    font-family: var(--secondary-fonts);
+    color: var(--text-light-color);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.seperator{
+    color: var(--text-light-color);
+    margin: 3rem 0;
+}
+
+.pagination{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-family: var(--secondary-fonts);
+}
+.page-nos{
+    color: white;
+    background-color: var(--title-font-color);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 50%;
+}
+
+/* Sidebar */
+
+.sidebar-category{
+    width: 85%;
+    margin: auto;
+}
+.category-title{
+    font-family: var(--secondary-fonts);
+    font-size: 1.7rem;
+    margin: 2rem 0;
+}
+
+.sidebar-category-content{
+    width: 75%;
+    margin: 1.5rem auto;
+}
+.popular-post-img{
+    width: 100%;
+}
+.popular-post-headline{
+    font-size: 1.2rem;
+    font-family: var(--headline-fonts);
+    color: var(--title-font-color);
+    margin: 1.5rem 0;
+}
+.sidebar-category-content input{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.3rem;
+}
+.newsletter-btn{
+    margin-top: 1rem;
+    border: none;
+}
+.sidebar-category-content input[type = "email"]{
+    padding-left: 20px;
+}
+.popular-tag-btn{
+    display: inline-block;
+    padding: 0.3rem 1rem;    
+    margin-bottom: 1rem;
+    margin-right: 10px;
 }
 
 /* Media Queries */
@@ -189,4 +319,11 @@ nav .social-icons{
     #wave{
         bottom: -10%;
     }   
+
+    main{
+        background: url('/assets/Abract01.png') top right/60vw no-repeat;
+    }
+    .grid-parent{
+        grid-template-columns: 70% 30%;
+    }
 }
